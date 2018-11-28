@@ -31,14 +31,11 @@ int main(void)
 
             printf("Enter an integer: \n\t\t");
             scanf("%i", &j);
-
             triangularNumber = 0;
 
-
-            for(i = 1; i <= j; ++i)
-
-            triangularNumber += i;
-            printf("The triangular number of %i is %i\n", j, triangularNumber);
+                for(i = 1; i <= j; ++i)
+                     triangularNumber += i;
+                     printf("The triangular number of %i is %i\n", j, triangularNumber);
         }
     return 0;
 }
@@ -51,7 +48,8 @@ int main(void)
 
     EX: I used triangularNumber += j; instead of +=i causing wrong output.
     j variable is the # i want to reach while triangularNumber + i is what
-    adds up to it by incrementing to j. For example is j = 2 then 1+2+3 = 6.
+    adds up to it by incrementing to j. For example is j = 2 then 1+2 = 3.
+    
     When using j i was adding a number to the same number x number of times
     instead of adding a number + i x number of times. */
 
